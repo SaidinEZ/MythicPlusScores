@@ -1,8 +1,7 @@
 <template> 
   <div class="flex flex-col">
     <div>
-      <h1>{{ character.name }}</h1>
-      <p>{{ character.class }}</p>
+      <h1>{{ character.mythic_plus_scores_by_season.scores.all }}</h1>
     </div>
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -11,7 +10,7 @@
             <thead class="bg-gray-50">
               <tr>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Name
+                  Character
                 </th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Title
@@ -32,14 +31,14 @@
                 <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
-                      <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60" alt="">
+                      <img class="h-10 w-10 rounded-full" src="{{ character.thumbnail_url }}" alt="">
                     </div>
                     <div class="ml-4">
                       <div class="text-sm font-medium text-gray-900">
-                        Jane Cooper
+                        {{ character.name }}
                       </div>
                       <div class="text-sm text-gray-500">
-                        jane.cooper@example.com
+                        {{ character.class }} - {{ character.active_spec_name }}
                       </div>
                     </div>
                   </div>
@@ -57,7 +56,7 @@
                   Admin
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                  <a href="{{ character.profile_url }}" class="text-indigo-600 hover:text-indigo-900">Profile</a>
                 </td>
               </tr>
 
@@ -73,7 +72,7 @@
 <script>
 export default {
   async asyncData({ $axios }) {
-    const character = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_best_runs%2C%20mythic_plus_alternate_runs`)
+    const character = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_scores_by_season%3Acurrent%2C%20mythic_plus_best_runs%2C%20mythic_plus_alternate_runs`)
     return { character }
   },
 }
