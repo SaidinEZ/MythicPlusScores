@@ -74,9 +74,12 @@ const nuxtConfig: Configuration = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit'],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/style-resources', '@nuxtjs/markdownit', '@nuxtjs/axios'],
 
-
+  axios: {
+    // proxy: true
+  },
+  
   markdownit: {
     preset: 'default',
 
