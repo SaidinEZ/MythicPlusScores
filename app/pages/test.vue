@@ -1,5 +1,5 @@
 <template> 
-  <div class="flex flex-col">
+  <div class="flex flex-col bg-gray-100">
     <div>
       <h1>Test</h1>
     </div>
@@ -13,13 +13,16 @@
                   Character
                 </th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Title
+                  Score
                 </th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Status
                 </th>
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                  Role
+                  Dungeons
+                </th>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Profile
                 </th>
                 <th scope="col" class="relative px-6 py-3">
                   <span class="sr-only">Edit</span>
@@ -31,7 +34,7 @@
                 <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
-                      <img class="h-10 w-10 rounded-full" src="{{ character.thumbnail_url }}" alt="">
+                      <img class="h-10 w-10 rounded-full" :src="character.thumbnail_url" alt="">
                     </div>
                     <div class="ml-4">
                       <div class="text-sm font-medium text-gray-900">
@@ -44,19 +47,20 @@
                   </div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="text-sm text-gray-900">Regional Paradigm Technician</div>
-                  <div class="text-sm text-gray-500">Optimization</div>
+                  <div class="text-sm text-gray-900">Total</div>
+                  <div class="text-sm text-gray-500">1427</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     Active
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  Admin
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">HOA</div>
+                  <div class="text-sm text-gray-500">+16</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <a href="{{ character.profile_url }}" class="text-indigo-600 hover:text-indigo-900">Profile</a>
+                  <a :href="character.profile_url" class="text-indigo-600 hover:text-indigo-900">Profile</a>
                 </td>
               </tr>
 
