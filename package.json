@@ -32,7 +32,7 @@
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@nuxtjs/style-resources": "^1.0.0",
-    "@nuxtjs/axios": "^0.24.0",
+    "@nuxtjs/axios": "^5.13.6",
     "fast-glob": "^3.2.2",
     "nuxt": "^2.13.3",
     "nuxt-property-decorator": "^2.7.2",
