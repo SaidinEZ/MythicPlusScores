@@ -3,14 +3,13 @@
     <div class="header__logo">
       <nuxt-link to="/">
         <img :src="logo" alt="Logo" />
-        <p>Enkazin</p>
       </nuxt-link>
     </div>
 
     <nav class="nav ml-auto">
       <ul class="flex flex-row items-center sm:mt-4 sm:pt-4 md:mt-0 md:pt-0 md:mr-4 lg:mr-8">
         <li>
-          <nuxt-link to="/blog" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
+          <nuxt-link to="/test" class="block font-medium px-4 py-1 md:p-2 lg:px-4">
             Test
           </nuxt-link>
         </li>
