@@ -44,17 +44,17 @@
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm text-gray-500">1427</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap flex items-center">
                   <div class="inline-flex text-sm text-gray-900">HOA</div>
                   <br>
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     16
                   </span>
                 </td>
-                 <td class="px-6 py-4 whitespace-nowrap">
+                 <td class="px-6 py-4 whitespace-nowrap flex items-center">
                   <div class="inline-flex text-sm text-gray-900">DOS</div>
                   <br>
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-green-800">
                     16
                   </span>
                 </td>
