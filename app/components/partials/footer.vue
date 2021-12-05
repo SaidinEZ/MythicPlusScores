@@ -1,6 +1,6 @@
 <template>
   <footer class="footer -mx-4 md:mx-0">
-    <div class="container mx-auto pb-6 flex justify-center">
+    <div class="container mx-auto pb-6 flex justify-center text-white">
       Enkazin
     </div>
   </footer>
