@@ -1,8 +1,8 @@
 <template> 
   <div class="flex flex-col">
     <div>
-      <h1>{{ earth.title }}</h1>
-      <p>{{ earth.description }}</p>
+      <h1>{{ character.name }}</h1>
+      <p>{{ character.class }}</p>
     </div>
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -73,8 +73,8 @@
 <script>
 export default {
   async asyncData({ $axios }) {
-    const earth = await $axios.$get(`https://api.nuxtjs.dev/planets/earth`)
-    return { earth }
+    const character = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_best_runs%2C%20mythic_plus_alternate_runs`)
+    return { character }
   },
 }
 </script>
