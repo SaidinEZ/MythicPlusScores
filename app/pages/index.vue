@@ -712,7 +712,7 @@
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
                   <div class="text-sm text-gray-900">Total</div>
-                  <div class="text-sm" :style="color: konstanz.mythic_plus_scores_by_season[0].segments.all.color">{{ konstanz.mythic_plus_scores_by_season[0].segments.all.score }}</div>
+                  <div class="text-sm">0</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
@@ -777,7 +777,7 @@
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
                   <div class="text-sm text-gray-900">Total</div>
-                  <div class="text-sm" :style="color: knoof.mythic_plus_scores_by_season[0].segments.all.color">{{ knoof.mythic_plus_scores_by_season[0].segments.all.score }}</div>
+                  <div class="text-sm">0</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
