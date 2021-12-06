@@ -46,14 +46,14 @@
                 <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
-                      <img class="h-10 w-10 rounded-full" :src="character.thumbnail_url" alt="">
+                      <img class="h-10 w-10 rounded-full" :src="pogfel.thumbnail_url" alt="">
                     </div>
                     <div class="ml-4">
                       <div class="text-sm font-medium text-gray-900">
-                        {{ character.name }}
+                        {{ pogfel.name }}
                       </div>
                       <div class="text-sm text-gray-500">
-                        {{ character.class }} - {{ character.active_spec_name }}
+                        {{ pogfel.class }} - {{ pogfel.active_spec_name }}
                       </div>
                     </div>
                   </div>
@@ -103,7 +103,7 @@
                   </span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium">
-                  <a :href="character.profile_url" class="text-indigo-600 hover:text-indigo-900">Profile</a>
+                  <a :href="pogfel.profile_url" class="text-indigo-600 hover:text-indigo-900">Profile</a>
                 </td>
               </tr>
 
@@ -117,10 +117,10 @@
                     </div>
                     <div class="ml-4">
                       <div class="text-sm font-medium text-gray-900">
-                        {{ character.name }}
+                        {{ androl.name }}
                       </div>
                       <div class="text-sm text-gray-500">
-                        {{ character.class }} - {{ character.active_spec_name }}
+                        {{ androl.class }} - {{ androl.active_spec_name }}
                       </div>
                     </div>
                   </div>
@@ -170,7 +170,7 @@
                   </span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium">
-                  <a :href="character.profile_url" class="text-indigo-600 hover:text-indigo-900">Profile</a>
+                  <a :href="androl.profile_url" class="text-indigo-600 hover:text-indigo-900">Profile</a>
                 </td>
               </tr>
             </tbody>
@@ -184,8 +184,9 @@
 <script>
 export default {
   async asyncData({ $axios }) {
-    const character = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-    return { character }
+    const pogfel = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
+    const androl = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=androl&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
+    return { pogfel, androl }
   },
 }
 </script>
