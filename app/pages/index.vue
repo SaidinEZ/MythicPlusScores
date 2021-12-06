@@ -1,5 +1,5 @@
 <template> 
-  <div class="flex flex-col">
+  <div class="flex flex-col mb-2">
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
         <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
@@ -60,7 +60,7 @@
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
                   <div class="text-sm text-gray-900">Total</div>
-                  <div class="text-sm">{{ pogfel.mythic_plus_scores_by_season[0].segments.all.score }}</div>
+                  <div class="text-sm" :style="{'color': pogfel.mythic_plus_scores_by_season[0].segments.all.color}">{{ pogfel.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
@@ -830,7 +830,7 @@
       </div>
     </div>
   </div>
-  </template>
+</template>
 
 <script>
 export default {
