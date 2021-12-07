@@ -9,7 +9,7 @@
                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Character
                 </th>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Score
                 </th>
                 <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -61,7 +61,7 @@
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
-                  <div class="text-sm" :style="{'color': androl.mythic_plus_scores_by_season[0].segments.all.color}">{{ androl.mythic_plus_scores_by_season[0].segments.all.score }}</div>
+                  <div class="text-sm" :style="{'color': androl.mythic_plus_scores_by_season[0].segments.all.color}">{{ Math.round(androl.mythic_plus_scores_by_season[0].segments.all.score) }}</div>
                 </td>
                 <td class="flex flex-col items-center px-6 py-4 whitespace-nowrap text-center">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
