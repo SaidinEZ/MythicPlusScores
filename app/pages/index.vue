@@ -65,15 +65,18 @@
                 </td>
                 <td class="flex flex-col items-center px-6 py-4 whitespace-nowrap text-center">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
-                    {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }} - {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "F" : "T" }}
+                    {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }} - {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                   </span>
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                    {{ androl.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').mythic_level }} - {{ androl.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "F" : "T" }}
+                    {{ androl.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').mythic_level }} - {{ androl.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                    {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
+                <td class="flex flex-col items-center px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
+                    {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }} - {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'HOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                  </span>
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                    {{ androl.mythic_plus_alternate_runs.find(x => x.short_name === 'HOA').mythic_level }} - {{ androl.mythic_plus_alternate_runs.find(x => x.short_name === 'HOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                   </span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
