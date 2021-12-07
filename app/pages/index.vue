@@ -65,6 +65,9 @@
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                    {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }} - {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').affixes[0].name }}
+                  </span>
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
