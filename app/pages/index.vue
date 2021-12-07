@@ -790,7 +790,7 @@
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800 text-center">
-                    NA
+                    {{ knoof.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level ?? 'NA' }}
                   </span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
