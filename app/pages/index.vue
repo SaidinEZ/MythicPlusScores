@@ -63,12 +63,12 @@
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': androl.mythic_plus_scores_by_season[0].segments.all.color}">{{ androl.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="flex flex-col items-center px-6 py-4 whitespace-nowrap text-center">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }} - {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').affixes[0].name }}
                   </span>
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
-                    {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
+                    {{ androl.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').mythic_level }} - {{ androl.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').affixes[0].name }}
                   </span>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
