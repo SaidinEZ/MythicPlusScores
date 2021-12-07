@@ -44,7 +44,7 @@
             <tbody class="bg-white divide-y divide-gray-200">  
             
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="androl.thumbnail_url" alt="">
@@ -112,7 +112,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="ryoca.thumbnail_url" alt="">
@@ -177,7 +177,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="regnen.thumbnail_url" alt="">
@@ -242,7 +242,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="gaidin.thumbnail_url" alt="">
@@ -307,7 +307,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="enkazin.thumbnail_url" alt="">
@@ -372,7 +372,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="enkamonk.thumbnail_url" alt="">
@@ -437,7 +437,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="enkadk.thumbnail_url" alt="">
@@ -502,7 +502,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="pogbear.thumbnail_url" alt="">
@@ -567,7 +567,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="lamer.thumbnail_url" alt="">
@@ -632,7 +632,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="konstanz.thumbnail_url" alt="">
@@ -697,7 +697,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="pogfel.thumbnail_url" alt="">
@@ -762,7 +762,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap text-center">
+                <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="knoof.thumbnail_url" alt="">
