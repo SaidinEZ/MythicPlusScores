@@ -44,7 +44,7 @@
             <tbody class="bg-white divide-y divide-gray-200">  
             
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="androl.thumbnail_url" alt="">
@@ -59,47 +59,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': androl.mythic_plus_scores_by_season[0].segments.all.color}">{{ androl.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ androl.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -109,7 +109,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="ryoca.thumbnail_url" alt="">
@@ -124,47 +124,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': ryoca.mythic_plus_scores_by_season[0].segments.all.color}">{{ ryoca.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ ryoca.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ ryoca.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ ryoca.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ ryoca.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ ryoca.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ ryoca.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ ryoca.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ ryoca.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -174,7 +174,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="regnen.thumbnail_url" alt="">
@@ -189,47 +189,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': regnen.mythic_plus_scores_by_season[0].segments.all.color}">{{ regnen.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ regnen.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ regnen.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ regnen.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ regnen.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ regnen.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ regnen.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ regnen.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ regnen.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -239,7 +239,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="gaidin.thumbnail_url" alt="">
@@ -254,47 +254,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': gaidin.mythic_plus_scores_by_season[0].segments.all.color}">{{ gaidin.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ gaidin.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ gaidin.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ gaidin.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ gaidin.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ gaidin.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ gaidin.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ gaidin.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ gaidin.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -304,7 +304,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="enkazin.thumbnail_url" alt="">
@@ -319,47 +319,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': enkazin.mythic_plus_scores_by_season[0].segments.all.color}">{{ enkazin.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkazin.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkazin.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkazin.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkazin.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkazin.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkazin.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkazin.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkazin.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -369,7 +369,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="enkamonk.thumbnail_url" alt="">
@@ -384,47 +384,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': enkamonk.mythic_plus_scores_by_season[0].segments.all.color}">{{ enkamonk.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkamonk.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkamonk.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkamonk.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkamonk.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkamonk.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkamonk.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkamonk.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkamonk.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -434,7 +434,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="enkadk.thumbnail_url" alt="">
@@ -449,47 +449,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': enkadk.mythic_plus_scores_by_season[0].segments.all.color}">{{ enkadk.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkadk.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkadk.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkadk.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkadk.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkadk.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkadk.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkadk.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ enkadk.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -499,7 +499,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="pogbear.thumbnail_url" alt="">
@@ -514,47 +514,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': pogbear.mythic_plus_scores_by_season[0].segments.all.color}">{{ pogbear.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogbear.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogbear.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogbear.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogbear.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogbear.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogbear.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogbear.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogbear.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -564,7 +564,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="lamer.thumbnail_url" alt="">
@@ -579,47 +579,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': lamer.mythic_plus_scores_by_season[0].segments.all.color}">{{ lamer.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ lamer.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ lamer.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ lamer.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ lamer.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ lamer.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ lamer.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ lamer.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ lamer.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -629,7 +629,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="konstanz.thumbnail_url" alt="">
@@ -644,47 +644,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': konstanz.mythic_plus_scores_by_season[0].segments.all.color}">{{ konstanz.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ konstanz.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ konstanz.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ konstanz.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ konstanz.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ konstanz.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ konstanz.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ konstanz.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ konstanz.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -694,7 +694,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="pogfel.thumbnail_url" alt="">
@@ -709,47 +709,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': pogfel.mythic_plus_scores_by_season[0].segments.all.color}">{{ pogfel.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogfel.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogfel.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogfel.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogfel.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800 text-center">
                     NA
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogfel.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogfel.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ pogfel.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
@@ -759,7 +759,7 @@
               </tr>
               
               <tr>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex items-center">
                     <div class="flex-shrink-0 h-10 w-10">
                       <img class="h-10 w-10 rounded-full" :src="knoof.thumbnail_url" alt="">
@@ -774,47 +774,47 @@
                     </div>
                   </div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="text-sm text-gray-900">Total</div>
                   <div class="text-sm" :style="{'color': knoof.mythic_plus_scores_by_season[0].segments.all.color}">{{ knoof.mythic_plus_scores_by_season[0].segments.all.score }}</div>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800 text-center">
                     NA
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ knoof.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ knoof.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ knoof.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ knoof.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ knoof.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ knoof.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }}
                   </span>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 text-center">
+                <td class="px-6 py-4 whitespace-nowrap text-center">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                     {{ knoof.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }}
                   </span>
                 </td>
