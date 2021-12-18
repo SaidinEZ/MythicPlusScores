@@ -6,10 +6,10 @@
           <table class="min-w-full divide-y divide-gray-200">
             <thead class="bg-gray-100">
               <tr>
-                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" class="col-label text-left">
                   Character
                 </th>
-                <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" class="col-label">
                   Score
                 </th>
                 <th scope="col" class="col-label">
@@ -18,25 +18,25 @@
                 <th scope="col" class="col-label">
                   HOA
                 </th>
-                <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" class="col-label">
                   MISTS
                 </th>
-                <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" class="col-label">
                   PF
                 </th>
-                <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" class="col-label">
                   SD
                 </th>
-                <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" class="col-label">
                   SOA
                 </th>
-                <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" class="col-label">
                   NW
                 </th>
-                <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" class="col-label">
                   TOP
                 </th>
-                <th scope="col" class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">
+                <th scope="col" class="col-label">
                   
                 </th>
               </tr>
