@@ -73,6 +73,16 @@
                     </span>
                   </div>
                 </td>
+                <td class="items-center px-6 py-4 whitespace-nowrap text-center">
+                  <div class="flex flex-col">
+                    <span class="text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'HOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                    </span>
+                    <span class="text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'HOA').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'HOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                    </span>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
