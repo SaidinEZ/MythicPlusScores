@@ -5,3 +5,15 @@
 .col-label {
   @apply px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider;
 }
+
+.key-levels {
+  @apply px-6 py-4 whitespace-nowrap text-center;
+}
+
+.best-run {
+  @apply text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2;
+}
+
+.alternative-run {
+  @apply text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800;
+}
