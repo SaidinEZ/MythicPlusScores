@@ -174,6 +174,6 @@ export default {
 	  const characters = [androl, ryoca, regnen, gaidin, enkazin, enkamonk, enkadk, pogbear, lamer, konstanz, pogfel, knoof]
 	
     return { characters }
-  },
+  }
 }
 </script>
