@@ -41,8 +41,8 @@
                 </th>
               </tr>
             </thead>
-            <tbody class="bg-white divide-y divide-gray-200">  
             
+            <tbody class="bg-white divide-y divide-gray-200">  
               <tr v-for="character in characters">
                 <td class="px-6 py-4 whitespace-nowrap">
                   <div class="flex items-center">
@@ -147,7 +147,6 @@
                   <a :href="character.profile_url" class="text-indigo-600 hover:text-indigo-900">Profile</a>
                 </td>
               </tr>
-              
             </tbody>
           </table>
         </div>
@@ -171,7 +170,7 @@ export default {
     const konstanz = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=konstanz&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
     const pogfel = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
     const knoof = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=knoof&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-	  const characters = [androl, ryoca, regnen, gaidin, enkazin, enkamonk, enkadk, pogbear, pogfel, knoof]
+	  const characters = [androl, ryoca, regnen, gaidin]
 	
     return { characters }
   }
