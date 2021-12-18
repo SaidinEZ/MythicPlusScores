@@ -66,80 +66,80 @@
                 <td class="items-center px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex flex-col">
                     <span class="text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                   </div>
                 </td>
                 <td class="items-center px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex flex-col">
                     <span class="text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'HOA')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'HOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'HOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'HOA')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'HOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'HOA').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'HOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                   </div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex flex-col">
                     <span class="text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'MISTS')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'MISTS')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'MISTS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'MISTS').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'MISTS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                   </div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex flex-col">
                     <span class="text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'PF')?.mythic_level ?? "N/A"" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'PF').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'PF').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'PF')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'PF').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'PF').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'PF').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                   </div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex flex-col">
                     <span class="text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'SD')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'SD').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                   </div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex flex-col">
                     <span class="text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SOA')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'SOA')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'SOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'SOA').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'SOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                   </div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex flex-col">
                     <span class="text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'NW')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'NW').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'NW').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'NW')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'NW').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'NW').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'NW').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                   </div>
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center">
                   <div class="flex flex-col">
                     <span class="text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 mb-2">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'TOP')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'TOP').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'TOP').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">
-                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'TOP')?.mythic_level ?? "N/A" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'TOP').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'TOP').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'TOP').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                   </div>
                 </td>
@@ -171,7 +171,7 @@ export default {
     const konstanz = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=konstanz&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
     const pogfel = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
     const knoof = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=knoof&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-	  const characters = [androl, ryoca, regnen, gaidin, enkazin, enkamonk, enkadk, pogbear, lamer, konstanz, pogfel, knoof]
+	  const characters = [androl, ryoca, regnen, gaidin, enkazin, enkamonk, enkadk, pogbear, pogfel, knoof]
 	
     return { characters }
   }
