@@ -170,7 +170,7 @@ export default {
 	  const characters = [androl, ryoca, regnen, gaidin, pogbear, enkazin, enkamonk, enkadk, pogfel, lamer, knoof]
     
     characters.sort(function (a, b) {
-      return a.mythic_plus_scores_by_season[0].segments.all.score - b.mythic_plus_scores_by_season[0].segments.all.score;
+      return b.mythic_plus_scores_by_season[0].segments.all.score - a.mythic_plus_scores_by_season[0].segments.all.score;
     });
 	
     return { characters }
