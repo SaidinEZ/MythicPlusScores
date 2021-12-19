@@ -6,39 +6,17 @@
           <table class="min-w-full divide-y divide-gray-200">
             <thead class="bg-gray-100">
               <tr>
-                <th scope="col" class="col-label text-left">
-                  Character
-                </th>
-                <th scope="col" class="col-label text-center">
-                  Score
-                </th>
-                <th scope="col" class="col-label text-center">
-                  DOS
-                </th>
-                <th scope="col" class="col-label text-center">
-                  HOA
-                </th>
-                <th scope="col" class="col-label text-center">
-                  MISTS
-                </th>
-                <th scope="col" class="col-label text-center">
-                  PF
-                </th>
-                <th scope="col" class="col-label text-center">
-                  SD
-                </th>
-                <th scope="col" class="col-label text-center">
-                  SOA
-                </th>
-                <th scope="col" class="col-label text-center">
-                  NW
-                </th>
-                <th scope="col" class="col-label text-center">
-                  TOP
-                </th>
-                <th scope="col" class="col-label text-center">
-                  
-                </th>
+                <th scope="col" class="col-label text-left">Character</th>
+                <th scope="col" class="col-label text-center">Score</th>
+                <th scope="col" class="col-label text-center">DOS</th>
+                <th scope="col" class="col-label text-center">HOA</th>
+                <th scope="col" class="col-label text-center">MISTS</th>
+                <th scope="col" class="col-label text-center">PF</th>
+                <th scope="col" class="col-label text-center">SD</th>
+                <th scope="col" class="col-label text-center">SOA</th>
+                <th scope="col" class="col-label text-center">NW</th>
+                <th scope="col" class="col-label text-center">TOP</th>
+                <th scope="col" class="col-label text-center"></th>
               </tr>
             </thead>
             
