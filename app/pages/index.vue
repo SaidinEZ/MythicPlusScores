@@ -121,6 +121,9 @@
                     </span>
                   </div>
                 </td>
+                <td class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium">
+                  <a :href="character.profile_url" class="text-indigo-600 hover:text-indigo-900">Profile</a>
+                </td>
               </tr>
             </tbody>
           </table>
