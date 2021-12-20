@@ -5,11 +5,7 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
-  theme: {
-    colors: {
-      'bluise': '#0b3765',
-    }
-  },
+  theme: {},
   variants: {},
   plugins: [],
 };
