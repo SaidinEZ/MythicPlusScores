@@ -41,4 +41,7 @@ export default class Header extends Vue {
     }
   }
 }
+body {
+  background-color: $bluise;
+}
 </style>
