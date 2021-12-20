@@ -26,4 +26,8 @@ export default class Footer extends Vue {}
 .footer {
   background-color: #fff;
 }
+
+.text-bluise {
+  color: #0b3765;
+}
 </style>
