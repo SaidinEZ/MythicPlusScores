@@ -13,6 +13,11 @@
             Test
           </nuxt-link>
         </li>
+        <li>
+          <nuxt-link to="/all" class="block text-white font-medium px-4 py-1 md:p-2 lg:px-4">
+            All characters
+          </nuxt-link>
+        </li>
       </ul>
     </nav>
   </header>
