@@ -9,13 +9,18 @@
     <nav class="nav ml-auto">
       <ul class="flex flex-row items-center sm:mt-4 sm:pt-4 md:mt-0 md:pt-0 md:mr-4 lg:mr-8">
         <li>
-          <nuxt-link to="/test" class="block text-white font-medium px-4 py-1 md:p-2 lg:px-4">
-            Test
+          <nuxt-link to="/" class="block text-white font-medium px-4 py-1 md:p-2 lg:px-4">
+            Tanks
           </nuxt-link>
         </li>
         <li>
           <nuxt-link to="/all" class="block text-white font-medium px-4 py-1 md:p-2 lg:px-4">
             All characters
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/test" class="block text-white font-medium px-4 py-1 md:p-2 lg:px-4">
+            Test
           </nuxt-link>
         </li>
       </ul>
@@ -41,7 +46,6 @@ export default class Header extends Vue {
 .nav {
   ul li > a {
     &.nuxt-link-active {
-      color: $bluise;
       @apply font-bold;
     }
   }
