@@ -46,7 +46,7 @@ export default class Header extends Vue {
 .nav {
   ul li > a {
     &.nuxt-link-active {
-      @apply underline underline-offset-8;
+      @apply underline;
     }
   }
 }
