@@ -44,10 +44,10 @@
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
                     <span class="best-run">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level || "NA" || "NA" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level || "NA" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run">
-                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').mythic_level || "NA" || "NA" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').mythic_level || "NA" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                   </div>
                 </td>
