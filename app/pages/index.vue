@@ -143,7 +143,8 @@ export default {
     const damer = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarren-mill&name=damer&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
     const enkadk = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarren-mill&name=enkadk&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
     const pogfel = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-	  const characters = [ryoca, sending, pogbear, enkazin, damer, enkadk, pogfel]
+	  const characters = [ryoca, sending]
+    // const characters = [ryoca, sending, pogbear, enkazin, damer, enkadk, pogfel]
     
     characters.sort(function (a, b) {
       return b.mythic_plus_scores_by_season[0].segments.all.score - a.mythic_plus_scores_by_season[0].segments.all.score;
