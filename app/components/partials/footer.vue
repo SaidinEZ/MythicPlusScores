@@ -8,7 +8,7 @@
             </g>
           </svg>
           <p class="text-bluise mt-2">
-            Enkazin
+            Ryoca
           </p>
        </div>
     </div>
