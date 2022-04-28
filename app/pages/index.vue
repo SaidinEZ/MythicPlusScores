@@ -16,6 +16,8 @@
                 <th scope="col" class="col-label text-center">SOA</th>
                 <th scope="col" class="col-label text-center">NW</th>
                 <th scope="col" class="col-label text-center">TOP</th>
+                <th scope="col" class="col-label text-center">STRT</th>
+                <th scope="col" class="col-label text-center">GMBT</th>
                 <th scope="col" class="col-label text-center"></th>
               </tr>
             </thead>
