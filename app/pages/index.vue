@@ -121,6 +121,26 @@
                     </span>
                   </div>
                 </td>
+                <td class="key-levels whitespace-nowrap">
+                  <div class="flex flex-col">
+                    <span class="best-run">
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'STRT').mythic_level || "NA" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'STRT').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                    </span>
+                    <span class="alternative-run">
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'STRT').mythic_level || "NA" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'STRT').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                    </span>
+                  </div>
+                </td>
+                <td class="key-levels whitespace-nowrap">
+                  <div class="flex flex-col">
+                    <span class="best-run">
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'GMBT').mythic_level || "NA" }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'GMBT').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                    </span>
+                    <span class="alternative-run">
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'GMBT').mythic_level || "NA" }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'GMBT').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                    </span>
+                  </div>
+                </td>
                 <td class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium">
                   <a :href="character.profile_url" class="text-indigo-600 hover:text-indigo-900">Profile</a>
                 </td>
