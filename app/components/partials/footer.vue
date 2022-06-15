@@ -8,7 +8,7 @@
             </g>
           </svg>
           <p class="text-bluise mt-2">
-            Ryoca
+            Saidin
           </p>
        </div>
     </div>
