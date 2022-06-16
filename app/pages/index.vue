@@ -45,7 +45,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.some('DOS')">
+                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.includes('DOS')">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run" v-if="character.mythic_plus_alternate_runs.find(x => x.short_name === 'DOS').mythic_level !== 'undefined'">
@@ -55,7 +55,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.some('HOA')">
+                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.includes('HOA')">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'HOA').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'HOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run" v-if="character.mythic_plus_alternate_runs.find(x => x.short_name === 'HOA').mythic_level !== 'undefined'">
@@ -65,7 +65,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.some('MISTS')">
+                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.includes('MISTS')">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'MISTS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run" v-if="character.mythic_plus_alternate_runs.find(x => x.short_name === 'MISTS').mythic_level !== 'undefined'">
@@ -75,7 +75,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.some('PF')">
+                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.includes('PF')">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'PF').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'PF').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run" v-if="character.mythic_plus_alternate_runs.find(x => x.short_name === 'PF').mythic_level !== 'undefined'">
@@ -85,7 +85,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.some('SD')">
+                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.includes('SD')">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run" v-if="character.mythic_plus_alternate_runs.find(x => x.short_name === 'SD').mythic_level !== 'undefined'">
@@ -95,7 +95,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.some('SOA')">
+                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.includes('SOA')">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SOA').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SOA').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run" v-if="character.mythic_plus_alternate_runs.find(x => x.short_name === 'SOA').mythic_level !== 'undefined'">
@@ -105,7 +105,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.some('NW')">
+                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.includes('NW')">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'NW').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'NW').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run" v-if="character.mythic_plus_alternate_runs.find(x => x.short_name === 'NW').mythic_level !== 'undefined'">
@@ -115,7 +115,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.some('TOP')">
+                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.includes('TOP')">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'TOP').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'TOP').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run" v-if="character.mythic_plus_alternate_runs.find(x => x.short_name === 'TOP').mythic_level !== 'undefined'">
@@ -125,7 +125,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.some('STRT')">
+                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.includes('STRT')">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'STRT').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'STRT').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run" v-if="character.mythic_plus_alternate_runs.find(x => x.short_name === 'STRT').mythic_level">
@@ -135,7 +135,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.some('GMBT')">
+                    <span class="best-run" v-if="character.mythic_plus_best_runs.short_name.includes('GMBT')">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'GMBT').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'GMBT').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run" v-if="character.mythic_plus_alternate_runs.find(x => x.short_name === 'GMBT').mythic_level !== 'undefined'">
