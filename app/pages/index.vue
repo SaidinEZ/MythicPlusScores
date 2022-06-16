@@ -36,13 +36,13 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.some(row => row.includes("SD")">
+                    <span class="best-run" v-if="character.some(row => row.includes("SD"))">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span v-else>
                       No data
                     </span>
-                    <span class="best-run" v-if="character.some(row => row.includes("SD")">
+                    <span class="best-run" v-if="character.some(row => row.includes("SD"))">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span v-else>
