@@ -71,10 +71,10 @@ export default {
   },	
   methods: {
      getBestDungeonByName(shortName) {
-        return character.mythic_plus_best_runs.find(x => x.short_name === shortName) || {}
+        return this.mythic_plus_best_runs.find(x => x.short_name === shortName) || {}
      },
      getAlternateDungeonByName(shortName) {
-        return character.mythic_plus_alternate_runs.find(x => x.short_name === shortName) || {}
+        return this.mythic_plus_alternate_runs.find(x => x.short_name === shortName) || {}
      },
      getBestMythicLevelByName(shortName) {
         return this.getBestDungeonByName(shortName).mythic_level;
