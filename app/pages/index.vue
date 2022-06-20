@@ -36,17 +36,11 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.some(row => row.includes("SD"))">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                    <span class="best-run">
+                      {{ getBestMythicLevelByName('SD') }} {{ getBestDungeonAffixByName('SD') }}
                     </span>
-                    <span v-else>
-                      No data
-                    </span>
-                    <span class="best-run" v-if="character.some(row => row.includes("SD"))">
-                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
-                    </span>
-                    <span v-else>
-                      No data
+                    <span class="alternate-run">
+                      {{ getAlternateMythicLevelByName('SD') }} {{ getAlternateDungeonAffixByName('SD') }}
                     </span>
                   </div>
                 </td>
@@ -65,20 +59,39 @@
 <script>
 export default {
   async asyncData({ $axios }) {
-    const ryoca = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarren-mill&name=ryoca&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-    const sending = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarren-mill&name=sending&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-    const damer = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarren-mill&name=damer&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-    const enkadk = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarren-mill&name=enkadk&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
     const pogfel = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-    const knoof = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=knoof&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
 	  const enkazin = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=enkazin&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-    const characters = [ryoca, pogfel, enkadk, damer, sending, knoof, enkazin]
+    const characters = [pogfel, enkazin]
     
     characters.sort(function (a, b) {
       return b.mythic_plus_scores_by_season[0].segments.all.score - a.mythic_plus_scores_by_season[0].segments.all.score;
     });
 	
     return { characters }
+  },	
+  methods: {
+     getBestDungeonByName(shortName) {
+        return character.mythic_plus_best_runs.find(x => x.short_name === shortName) || {}
+     },
+     getAlternateDungeonByName(shortName) {
+        return character.mythic_plus_alternate_runs.find(x => x.short_name === shortName) || {}
+     },
+     getBestMythicLevelByName(shortName) {
+        return this.getBestDungeonByName(shortName).mythic_level;
+     },
+     getAlternateMythicLevelByName(shortName) {
+        return this.getAlternateDungeonByName(shortName).mythic_level;
+     },
+     getBestDungeonAffixByName(shortName) {
+        var findBestDungeonAffix = this.getBestDungeonByName(shortName).affixes[0].name;
+        var bestDungeonAffix = ((findBestDungeonAffix === "Fortified") ? '(F)' : '(T)');
+        return bestDungeonAffix;
+     },
+     getAlternateDungeonAffixByName(shortName) {
+        var findAlternateDungeonAffix = this.getAlternateDungeonByName(shortName).affixes[0].name;
+        var alternateDungeonAffix = ((findAlternateDungeonAffix === "Fortified") ? '(F)' : '(T)');
+        return alternateDungeonAffix;
+     }
   }
 }
 </script>
