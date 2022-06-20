@@ -37,10 +37,10 @@
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
                     <span class="best-run">
-                      {{ getBestMythicLevelByName(character, 'SD') }} {{ getBestDungeonAffixByName(character, 'SD') }}
+                      {{ getBestMythicLevelByName('SD') }} {{ getBestDungeonAffixByName('SD') }}
                     </span>
                     <span class="alternate-run">
-                      {{ getAlternateMythicLevelByName(character, 'SD') }} {{ getAlternateDungeonAffixByName(character, 'SD') }}
+                      {{ getAlternateMythicLevelByName('SD') }} {{ getAlternateDungeonAffixByName('SD') }}
                     </span>
                   </div>
                 </td>
@@ -70,25 +70,25 @@ export default {
     return { characters }
   },	
   methods: {
-     getBestDungeonByName(character, shortName) {
-        return character.mythic_plus_best_runs.find(x => x.short_name === shortName) || {}
+     getBestDungeonByName(shortName) {
+        return this.mythic_plus_best_runs.find(x => x.short_name === shortName) || {}
      },
-     getAlternateDungeonByName(character, shortName) {
-        return character.mythic_plus_alternate_runs.find(x => x.short_name === shortName) || {}
+     getAlternateDungeonByName(shortName) {
+        return this.mythic_plus_alternate_runs.find(x => x.short_name === shortName) || {}
      },
-     getBestMythicLevelByName(character, shortName) {
-        return character.getBestDungeonByName(character, shortName).mythic_level;
+     getBestMythicLevelByName(shortName) {
+        return this.getBestDungeonByName(shortName).mythic_level;
      },
-     getAlternateMythicLevelByName(character, shortName) {
-        return character.getAlternateDungeonByName(character, shortName).mythic_level;
+     getAlternateMythicLevelByName(shortName) {
+        return this.getAlternateDungeonByName(character, shortName).mythic_level;
      },
-     getBestDungeonAffixByName(character, shortName) {
-        var findBestDungeonAffix = character.getBestDungeonByName(character, shortName).affixes[0].name;
+     getBestDungeonAffixByName(shortName) {
+        var findBestDungeonAffix = this.getBestDungeonByName(shortName).affixes[0].name;
         var bestDungeonAffix = ((findBestDungeonAffix === "Fortified") ? '(F)' : '(T)');
         return bestDungeonAffix;
      },
-     getAlternateDungeonAffixByName(character, shortName) {
-        var findAlternateDungeonAffix = character.getAlternateDungeonByName(character, shortName).affixes[0].name;
+     getAlternateDungeonAffixByName(shortName) {
+        var findAlternateDungeonAffix = this.getAlternateDungeonByName(shortName).affixes[0].name;
         var alternateDungeonAffix = ((findAlternateDungeonAffix === "Fortified") ? '(F)' : '(T)');
         return alternateDungeonAffix;
      }
