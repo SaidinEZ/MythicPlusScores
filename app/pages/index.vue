@@ -80,7 +80,7 @@ export default {
         return this.getBestDungeonByName(shortName).mythic_level;
      },
      getAlternateMythicLevelByName(shortName) {
-        return this.getAlternateDungeonByName(character, shortName).mythic_level;
+        return this.getAlternateDungeonByName(shortName).mythic_level;
      },
      getBestDungeonAffixByName(shortName) {
         var findBestDungeonAffix = this.getBestDungeonByName(shortName).affixes[0].name;
