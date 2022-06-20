@@ -76,19 +76,19 @@ export default {
      getAlternateDungeonByName(character, shortName) {
         return character.mythic_plus_alternate_runs.find(x => x.short_name === shortName) || {}
      },
-     getBestMythicLevelByName(shortName) {
-        return this.getBestDungeonByName(shortName).mythic_level;
+     getBestMythicLevelByName(character, shortName) {
+        return character.getBestDungeonByName(shortName).mythic_level;
      },
-     getAlternateMythicLevelByName(shortName) {
-        return this.getAlternateDungeonByName(shortName).mythic_level;
+     getAlternateMythicLevelByName(character, shortName) {
+        return character.getAlternateDungeonByName(shortName).mythic_level;
      },
-     getBestDungeonAffixByName(shortName) {
-        var findBestDungeonAffix = this.getBestDungeonByName(shortName).affixes[0].name;
+     getBestDungeonAffixByName(character, shortName) {
+        var findBestDungeonAffix = character.getBestDungeonByName(shortName).affixes[0].name;
         var bestDungeonAffix = ((findBestDungeonAffix === "Fortified") ? '(F)' : '(T)');
         return bestDungeonAffix;
      },
-     getAlternateDungeonAffixByName(shortName) {
-        var findAlternateDungeonAffix = this.getAlternateDungeonByName(shortName).affixes[0].name;
+     getAlternateDungeonAffixByName(character, shortName) {
+        var findAlternateDungeonAffix = character.getAlternateDungeonByName(shortName).affixes[0].name;
         var alternateDungeonAffix = ((findAlternateDungeonAffix === "Fortified") ? '(F)' : '(T)');
         return alternateDungeonAffix;
      }
