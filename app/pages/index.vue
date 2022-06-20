@@ -37,10 +37,10 @@
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
                     <span class="best-run">
-                      {{ getBestMythicLevelByName('SD') }} {{ getBestDungeonAffixByName('SD') }}
+                      {{ character.getBestMythicLevelByName('SD') }} {{ character.getBestDungeonAffixByName('SD') }}
                     </span>
                     <span class="alternate-run">
-                      {{ getAlternateMythicLevelByName('SD') }} {{ getAlternateDungeonAffixByName('SD') }}
+                      {{ character.getAlternateMythicLevelByName('SD') }} {{ character.getAlternateDungeonAffixByName('SD') }}
                     </span>
                   </div>
                 </td>
