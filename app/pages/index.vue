@@ -37,10 +37,10 @@
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
                     <span class="best-run">
-                      {{ character.getBestMythicLevelByName('SD') }} {{ character.getBestDungeonAffixByName('SD') }}
+                      {{ getBestMythicLevelByName(character, 'SD') }} {{ character.getBestDungeonAffixByName(character, 'SD') }}
                     </span>
                     <span class="alternate-run">
-                      {{ character.getAlternateMythicLevelByName('SD') }} {{ character.getAlternateDungeonAffixByName('SD') }}
+                      {{ character.getAlternateMythicLevelByName(character, 'SD') }} {{ character.getAlternateDungeonAffixByName(character, 'SD') }}
                     </span>
                   </div>
                 </td>
@@ -70,10 +70,10 @@ export default {
     return { characters }
   },	
   methods: {
-     getBestDungeonByName(shortName) {
+     getBestDungeonByName(character, shortName) {
         return character.mythic_plus_best_runs.find(x => x.short_name === shortName) || {}
      },
-     getAlternateDungeonByName(shortName) {
+     getAlternateDungeonByName(character, shortName) {
         return character.mythic_plus_alternate_runs.find(x => x.short_name === shortName) || {}
      },
      getBestMythicLevelByName(shortName) {
