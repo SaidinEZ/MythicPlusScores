@@ -157,11 +157,13 @@
 <script>
 export default {
   async asyncData({ $axios }) {
-    const pogfel = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-	  const knoof = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=knoof&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-    const damer = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarrenmill&name=damer&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-    const enkadk = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarrenmill&name=enkadk&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
-    const sending = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarrenmill&name=damer&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
+    const pogfel = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=pogfel&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Aprevious`)
+	  const knoof = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=knoof&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Aprevious`)
+    const damer = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarrenmill&name=damer&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Aprevious`)
+    const enkadk = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarrenmill&name=enkadk&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Aprevious`)
+    const sending = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=tarrenmill&name=damer&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Aprevious`)
+    const ryoca = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=ryoca&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Aprevious`)
+    
     
     const characters = [pogfel, knoof, damer, enkadk, sending]
     
