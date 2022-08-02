@@ -37,10 +37,10 @@
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
                     <span class="best-run">
-                      {{ getBestMythicLevelByName('SD') }} {{ getBestDungeonAffixByName('SD') }}
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternate-run">
-                      {{ getAlternateMythicLevelByName('SD') }} {{ getAlternateDungeonAffixByName('SD') }}
+                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'SD').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'SD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                   </div>
                 </td>
