@@ -165,7 +165,7 @@ export default {
     const ryoca = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=ryoca&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Aprevious`)
     
     
-    const characters = [pogfel, knoof, damer, enkadk, sending]
+    const characters = [pogfel, knoof, damer, enkadk, sending, ryoca]
     
     characters.sort(function (a, b) {
       return b.mythic_plus_scores_by_season[0].segments.all.score - a.mythic_plus_scores_by_season[0].segments.all.score;
