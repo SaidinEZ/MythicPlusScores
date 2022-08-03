@@ -45,7 +45,7 @@
                 </td>
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
-                    <span class="best-run" v-if="character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level !== 'undefined'">
+                    <span class="best-run">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'DOS').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run">
