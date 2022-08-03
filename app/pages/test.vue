@@ -40,7 +40,37 @@
                 <td class="key-levels whitespace-nowrap">
                   <div class="flex flex-col">
                     <span class="best-run">
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'WORK').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'WORK').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                    </span>
+                    <span class="alternative-run">
+                      N/A
+                    </span>
+                  </div>
+                </td>
+                <td class="key-levels whitespace-nowrap">
+                  <div class="flex flex-col">
+                    <span class="best-run">
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'GMBT').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'GMBT').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                    </span>
+                    <span class="alternative-run">
+                      N/A
+                    </span>
+                  </div>
+                </td>
+                <td class="key-levels whitespace-nowrap">
+                  <div class="flex flex-col">
+                    <span class="best-run">
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'YARD').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'YARD').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                    </span>
+                    <span class="alternative-run">
+                      N/A
+                    </span>
+                  </div>
+                </td>
+                <td class="key-levels whitespace-nowrap">
+                  <div class="flex flex-col">
+                    <span class="best-run">
+                      {{ character.mythic_plus_best_runs.find(x => x.short_name === 'LOWR').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'LOWR').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run">
                       N/A
