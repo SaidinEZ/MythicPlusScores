@@ -49,7 +49,7 @@
                       {{ character.mythic_plus_best_runs.find(x => x.short_name === 'GMBT').mythic_level }} {{ character.mythic_plus_best_runs.find(x => x.short_name === 'GMBT').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
                     </span>
                     <span class="alternative-run">
-                      {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'GMBT').mythic_level }} {{ character.mythic_plus_alternate_runs.find(x => x.short_name === 'GMBT').affixes[0].name == "Fortified" ? "(F)" : "(T)" }}
+                      N/A
                     </span>
                   </div>
                 </td>
@@ -69,9 +69,9 @@
 export default {
   async asyncData({ $axios }) {
     const ryoca = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=ryoca&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
+    const smedn = await $axios.$get(`https://raider.io/api/v1/characters/profile?region=eu&realm=draenor&name=smedn&fields=mythic_plus_best_runs%2Cmythic_plus_alternate_runs%2Cmythic_plus_scores_by_season%3Acurrent`)
     
-    
-    const characters = [ryoca, ryoca, ryoca, ryoca, ryoca]
+    const characters = [ryoca, smedn]
     
     characters.sort(function (a, b) {
       return b.mythic_plus_scores_by_season[0].segments.all.score - a.mythic_plus_scores_by_season[0].segments.all.score;
