@@ -8,16 +8,10 @@
               <tr>
                 <th scope="col" class="col-label text-left">Character</th>
                 <th scope="col" class="col-label text-center">Score</th>
-                <th scope="col" class="col-label text-center">DOS</th>
-                <th scope="col" class="col-label text-center">HOA</th>
-                <th scope="col" class="col-label text-center">MISTS</th>
-                <th scope="col" class="col-label text-center">PF</th>
-                <th scope="col" class="col-label text-center">SD</th>
-                <th scope="col" class="col-label text-center">SOA</th>
-                <th scope="col" class="col-label text-center">NW</th>
-                <th scope="col" class="col-label text-center">TOP</th>
-                <th scope="col" class="col-label text-center">STRT</th>
+                <th scope="col" class="col-label text-center">WORK</th>
                 <th scope="col" class="col-label text-center">GMBT</th>
+                <th scope="col" class="col-label text-center">YARD</th>
+                <th scope="col" class="col-label text-center">LOWR</th>
                 <th scope="col" class="col-label text-center"></th>
               </tr>
             </thead>
